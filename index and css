@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX - Multiplanetary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="logo">SPACEX</div>
+            
+            <ul class="menu">
+                <li><a href="#">VEHICLES</a></li>
+                <li><a href="#">LAUNCHES</a></li>
+                <li><a href="#">HUMAN SPACEFLIGHT</a></li>
+                <li><a href="#">RIDESHARE</a></li>
+                <li><a href="#">STARLINK</a></li>
+            </ul>
+
+            <div class="right-nav">
+                <a href="https://shop.spacex.com/" class="shop-link">SHOP</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <section class="content">
+            <div class="text-selection">
+                <h1>MAKING LIFE<br>MULTIPLANETARY</h1>
+                <p>SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
+                <button class="btn-explore">EXPLORE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+css
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.main {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo-img {
+    width: 150px;
+    filter: invert(1); 
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu li a, .shop-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.content h1 {
+    font-size: 45px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.content p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.btn-explore {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-explore:hover {
+    background: #fff;
+    color: #000;
+}
