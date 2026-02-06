@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">SPACEX</div>
+        <nav class="nav-links">
+            <a href="#">VEHICLES</a>
+            <a href="#">LAUNCHES</a>
+            <a href="#">HUMAN SPACEFLIGHT</a>
+            <a href="#">STARLINK</a>
+            <a href="#">SHOP</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="mars">
+        <div class="content">
+            <h3>UPCOMING</h3>
+            <h1>MAKING LIFE MULTIPLANETARY</h1>
+            <p>SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
+            <a href="#" class="btn">EXPLORE</a>
+        </div>
+    </section>
+
+    <section class="hero" id="starship">
+        <div class="content">
+            <h1>REVOLUTIONIZING SPACE TECHNOLOGY</h1>
+            <p>SpaceX's Starship spacecraft and Super Heavy rocket is a fully reusable transportation system designed to carry crew and cargo.</p>
+            <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+csSSSSSSSSSSSSSSSSSSSSSS
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+    z-index: 100;
+    background: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; 
+    padding: 0 0 100px 80px;
+    scroll-snap-align: start;
+}
+
+
+#mars {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent), url('mars_bg.jpg');
+}
+
+#starship {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent), url('starship_bg.jpg');
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content h1 {
+    font-size: 45px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
