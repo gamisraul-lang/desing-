@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX | Making Life Multiplanetary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">SPACEX</div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <nav id="nav-menu">
+            <ul>
+                <li class="dropdown-parent">
+                    <a href="#">VEHICLES <span>⌄</span></a>
+                    <ul class="drawer">
+                        <li><a href="https://www.spacex.com/vehicles/starship" target="_blank">STARSHIP</a></li>
+                        <li><a href="https://www.spacex.com/vehicles/dragon" target="_blank">DRAGON</a></li> 
+                        <li><a href="#">FALCON 9</a></li>
+                        <li><a href="#">FALCON HEAVY</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-parent">
+                    <a href="#">HUMAN SPACEFLIGHT <span>⌄</span></a>
+                    <ul class="drawer">
+                        <li><a href="#">OVERVIEW</a></li>
+                        <li><a href="#">SPACE STATION</a></li>
+                        <li><a href="#">EARTH ORBIT</a></li>
+                        <li><a href="#">THE MOON</a></li>
+                        <li><a href="#">MARS & BEYOND</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">STARLINK</a></li>
+                <li><a href="#">STARSHIELD</a></li>
+                <li class="dropdown-parent">
+                    <a href="#">xAI <span>⌄</span></a>
+                    <ul class="drawer">
+                        <li><a href="#">GROK</a></li>
+                        <li><a href="#">GROKIPEDIA</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-parent">
+                    <a href="#">COMPANY <span>⌄</span></a>
+                    <ul class="drawer">
+                        <li><a href="#">MISSION</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">UPDATES</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-parent">
+                    <a href="#">SHOP <span>⌄</span></a>
+                    <ul class="drawer">
+                        <li><a href="https://shop.spacex.com/" target="_blank">SPACEX</a></li> 
+                        <li><a href="#">xAI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="launch-container">
+            <div class="launch-dropdown">UPCOMING LAUNCHES ▾</div>
+            <div class="launch-panel">
+                <div class="launch-item">
+                    <img src="https://www.spacex.com/static/images/share.jpg" alt="Mission">
+                    <div class="launch-details">
+                        <h4>NASA Crew-12</h4>
+                        <p>February 11, 2026 19:01<br>Singapore Time</p>
+                    </div>
+                </div>
+                <div class="launch-item">
+                    <img src="https://www.spacex.com/static/images/share.jpg" alt="Mission">
+                    <div class="launch-details">
+                        <h4>Starlink Mission</h4>
+                        <p>February 11, 2026 22:07<br>Singapore Time</p>
+                    </div>
+                </div>
+                <a href="#" class="all-launches">⸬ ALL UPCOMING LAUNCHES</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero reveal">
+        <div class="content">
+            <h1>MAKING LIFE<br>MULTIPLANETARY</h1>
+            <p>We believe a future where humanity explores the cosmos isn't just a goal—it’s fundamentally more exciting than staying grounded. SpaceX exists to make that future a reality.</p>
+            <a href="#" class="btn">EXPLORE <span>→</span></a>
+        </div>
+    </main>
+
+    <section class="info-section reveal">
+        <div class="content">
+            <h1>Revolutionizing space technology</h1>
+            <p>Designed for total reusability, the Starship and Super Heavy system is SpaceX’s gateway to the cosmos.</p>
+            <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </section>
+
+    <section class="info-section sec-1 reveal">
+        <div class="content">
+            <h1>World’s leading launch service provider</h1>
+            <p>SpaceX is developing the next generation of rapidly reusable rockets to make exploring the stars accessible.</p>
+            <a href="#" class="btn">RESERVE YOUR RIDE</a>
+        </div>
+    </section>
+
+     <section class="info-section sec-2 reveal">
+        <div class="content">
+            <h1>Advancing human spaceflight</h1>
+            <p>Since returning human spaceflight capabilities to the United States in 2020, SpaceX is helping build a new era where not just hundreds of people, but thousands and ultimately millions will be able to explore space..</p>
+            <a href="#" class="btn">JOINT MISSIOn</a>
+        </div>
+    </section>
+
+    <section class="info-section sec-3 reveal">
+        <div class="content">
+            <h1>Delivering high-speed internet</h1>
+            <p>Starlink is the world’s most advanced satellite constellation delivering reliable broadband internet.</p>
+            <a href="#" class="btn">ORDER NOW</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>SPACEX &copy; 2026</p>
+            <ul class="footer-links">
+                <li><a href="#">X</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+                <li><a href="#">FLICKR</a></li>
+                <li><a href="#">LINKEDIN</a></li> 
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">SUPPLIERS</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('toggle');
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    
+                    
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
